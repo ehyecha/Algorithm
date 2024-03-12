@@ -15,11 +15,13 @@ def solution(bandage, health, attacks):
         
         if time in attack_time:
             current_health -= attack_degree[idx]
+            current_health = isMaxHeal(current_health, health)
             idx += 1
             successive_score = 0
         else:
             if current_health < health:
                 current_health += bandage[1]
+                current_health = isMaxHeal(current_health, health)
         
         if successive_score == bandage[0]:
              current_health += bandage[2]
