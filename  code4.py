@@ -26,6 +26,7 @@ def solution(bandage, health, attacks):
         if successive_score == bandage[0]:
              current_health += bandage[2]
              current_health = isMaxHeal(current_health, health)
+             successive_score = 0
                 
         if current_health  <= 0:
             current_health = -1
