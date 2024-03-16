@@ -1,3 +1,5 @@
+# 출처: https://school.programmers.co.kr/learn/courses/30/lessons/250121
+# [PCCE 기출문제] 10번 / 데이터 분석
 
 def solution(data, ext, val_ext, sort_by):
     answer = [[]]

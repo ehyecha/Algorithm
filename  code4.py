@@ -1,3 +1,6 @@
+# 출처: https://school.programmers.co.kr/learn/courses/30/lessons/250137
+# [PCCP 기출문제] 1번 / 붕대 감기
+
 def isMaxHeal(current, max):
     if current > max:
         current = max

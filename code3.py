@@ -1,3 +1,5 @@
+# 출처: https://school.programmers.co.kr/learn/courses/30/lessons/258712
+# 가장 많이 받은 선물
 from collections import Counter
 def solution(friends, gifts):
     answer = 0

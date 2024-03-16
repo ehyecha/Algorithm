@@ -1,5 +1,5 @@
-
-
+# 출처 : https://school.programmers.co.kr/learn/courses/30/lessons/120956
+# 옹알이
 def check_word(w, words):
     answer = 0
     for wo in words:
