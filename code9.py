@@ -4,11 +4,6 @@ def solution(my_string, queries):
    my_string = list(my_string)
    for q in queries:
         a,b = q
-        a = int(a)
-        b = int(b)
         #문자열 뒤집기 진행하기
         my_string = my_string[:a] + list(reversed(my_string[a:b +1])) + my_string[b+1:]
    return ''.join(my_string)
-
-d = solution("rermgorpsam",	[[2, 3], [0, 7], [5, 9], [6, 10]])
-print(d)
