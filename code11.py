@@ -4,7 +4,7 @@
 
 def solution(common):
     answer = 0
-    #6등차인지 등비인지 구별
+    #등차인지 등비인지 구별
     diff1 =common[1] - common[0]
     diff2 = common[2] - common[1]
     if (diff1 == diff2):
