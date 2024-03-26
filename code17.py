@@ -1,3 +1,7 @@
+#출처: https://school.programmers.co.kr/learn/courses/30/lessons/131704 
+#문제: 코딩테스트 연습 >연습문제 >택배상자
+
+
 def solution(order):
     answer, sub = initcontainer(order)
     for i in order[answer:]:
