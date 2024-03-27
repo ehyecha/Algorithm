@@ -4,6 +4,7 @@
 
 def solution(order):
     answer, sub = initcontainer(order)
+    print('answer sub', answer, sub)
     for i in order[answer:]:
         if i == sub[-1]:
             answer += 1
@@ -18,6 +19,7 @@ def initcontainer(order):
     result = 0
 
     for o in order:
+        print('sub ', result, sub_container, o)
         if len(sub_container) > 0 and o == sub_container[-1]:
             result += 1
             sub_container.pop()
@@ -28,6 +30,7 @@ def initcontainer(order):
                 break
             else:
                 sub_container.append(j)
+       
     return result, sub_container
 
 print(solution([4,2,1,3]))
