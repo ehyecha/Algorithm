@@ -33,4 +33,15 @@ def initcontainer(order):
        
     return result, sub_container
 
-print(solution([4,2,1,3]))
+def solution(order):    
+    stack = []    
+    answer = 0
+    for idx,num in enumerate(order):
+        stack.append(idx +1)
+        while stack and stack[-1] == order[answer]:                   
+            stack.pop()
+            answer += 1                         
+    return answer
+
+
+print(solution([5,4,3,2,1]))
